@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    
+}
+.section .nav-bar{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(23, 25, 26);
+    position: fixed;
+    z-index: 10;
+}
+.section .img{
+    height: 100px;
+    width: 100px;
+    padding-top: 20px;
+    padding-left: 57px;
+
+    float: left;
+}
+.section .para{
+
+    color: white;
+    /* font-size: 1.5rem; */
+    line-height: inherit;
+    font-weight: lighter;
+    padding-left: 2rem;
+    font-size: 39px;
+    float:left;
+    padding-top: 20px;
+}
+.section .nav-bar .list ul{
+    list-style-type: none;
+    float: right;
+    margin-top: 25px;
+    
+}
+.section .nav-bar .list ul li{
+    display: inline-block;
+    color: #fff;
+    padding-right: 50px;
+    font-size: 15px;
+    
+}
+.section .nav-bar .list ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+.section .nav-bar .list  ul li a:hover{
+    background-color: #fff;
+    color: rgb(23, 25, 26);
+    font-weight: 500;
+}
+.section .img-bg img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding-top: 150px;
+}
+.section .img-bg .overlay{
+    position: absolute;
+    top: 150px;
+    left: 25%;
+}
+.about .main{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(23, 25, 26);
+}
+.about .main .left{
+    margin-top: 25px;
+    margin-left: 30px;
+    color: white;
+    display: inline-block;
+    width: 60%;
+}
+.about .main .left h3{
+    margin-bottom: 25px;
+
+}
+.about .main .left p{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 25px;
+}
+.about .main .left a{
+    font-size: 15px;
+    color: rgb(85, 218, 255);
+    text-decoration: initial;
+    transition: 0.3s ease;
+}
+.about .main .left a:visited,.about .main .left a:hover{
+    color: rgb(85, 218, 255);
+    text-decoration: underline;
+}
+.about .main .left .gg{
+    font-size: 15px;
+    color: rgb(85, 218, 255);
+    text-decoration: initial;
+    transition: 0.3s ease;
+    margin-top: 15px;
+    display: block;
+    margin-right: 0%;
+}
+.about .main .left .gg:visited,.about .main .left .gg:hover{
+    color: rgb(85, 218, 255);
+    text-decoration: underline;
+}
+.about .main .right{
+    margin-left: 40px;
+    display: inline-block;
+    max-width: 20%;
+}
+.about .main .right h3{
+    color: white;
+}
+.about .main .right ul{
+    list-style: none;
+}
+
+.about .main .right ul li a{
+    color: rgb(85, 218, 255);
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 15px;
+    display: inline-block;
+}
+
+.about .main .right ul li i{
+    display: inline-block;
+    color: rgb(85, 218, 255);
+    font-size: 15px;
+}
+.about .main .right ul li a:hover,.about .main .right ul li a:visited{
+    color: rgb(85, 218, 255);
+    text-decoration: underline;
+}
+
