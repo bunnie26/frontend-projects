@@ -313,6 +313,9 @@ list-style: circle;
 #project .project-img:hover{
     transform: scale(1.1);
 }
+/* #project .project-img img{
+    height: 250px;
+} */
 /* project section ends*/
 /* <!-- contact section--> */
 #contact .contact{
