@@ -3,7 +3,7 @@
     margin: 0;
     /* background-color: rgb(244,244,244); */
     font-size: 20px;
-    font-family:sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 body{
     background-color: rgb(37,37,41);
@@ -54,12 +54,12 @@ body{
     margin-left: 25vh;
     /* justify-content: center; */
 }
-.content h1{
+.main .content h1{
     font-size: 3rem;
     justify-content: center;
     align-items: center;
 }
-.content h2{
+.main .content h2{
     padding-top: 45px;
     padding-bottom: 35px;
     font-size: 1.5rem;
@@ -116,6 +116,8 @@ body{
 .music-container img{
     padding: 20px;
     width: 100%;
+    background-size: cover;
+    /* background-position: center; */
 }
 
 .video{
@@ -127,7 +129,7 @@ body{
     max-width: 1180px;
     margin: auto;
     padding-top: 70px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 .video .video-content h1{
     font-size: 1.5rem;
@@ -151,4 +153,116 @@ body{
 }
 .video .video-content .button a:hover{
     background-color: #143f85;
+}
+.video .video-content img{
+    background-size: cover;
+}
+.gg{
+    background-image: url(section-bg.jpeg);
+    color: rgb(244,244,244);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin: 0 auto;
+    padding: 0;
+}
+.gg div{
+    padding: 9rem;
+    text-align: center;
+    max-width: 1180px;
+    padding-bottom: 9rem;
+    margin: 0 auto;
+}
+.gg div h3{
+    font-size: 1.5rem;
+    margin-block: 2rem;
+}
+.gg div p{
+    margin-block: .5rem;
+    line-height: 35px;
+}
+
+.gifts{
+    background-color: rgb(244,244,244);
+    text-align: center;
+    padding: 0 3rem;
+    padding-block: 50px;
+    color: #333;
+    padding-bottom: 30px;
+}
+.gifts .container{
+    display: grid;
+    max-width: 1180px;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    justify-content: center;
+    grid-gap: 20px;
+    margin: 0 auto;
+}
+.gifts .container .left img{
+    width: 100%;
+}
+.gifts .container .right h1{
+    /* padding-left: 50px; */
+    padding-block: 20px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.gifts .container .right p{
+    font-size: 16px;
+    line-height: 30px;
+}
+.gifts .container .right .next{
+    padding-block: 18px;
+}
+.gifts .container .right a .fa-chevron-right{
+    padding-block: 18px;
+    font-size: 16px;
+    color: #103063;
+}
+.gifts .container .right a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #103063;
+}
+
+.footer .content{
+    padding: 1.2rem;
+    color: #f4f4f4;
+    display: grid;
+    max-width: 1180px;
+    justify-content: center;
+    margin: 0 auto;
+    grid-template-columns: repeat(4 ,300px);
+}
+.footer .content div ul{
+    list-style: none;
+    padding-block: 20px;
+}
+.footer .content div{
+    padding-inline: 30px;
+}
+ .footer .content div h2{
+    /* padding-top: 20px; */
+    padding-block: 20px;
+    font-weight: 500;
+}
+.footer .content div li a{
+    text-align: left;
+    font-size: 14px;
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: 100;
+    line-height: 30px;
+}
+.compiright{
+    padding-block: 20px;
+    background-color: rgb(51,51,51);
+    color: #f4f4f4;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.compiright h2{
+    font-weight: 100;
+    font-size: 17px;
 }
