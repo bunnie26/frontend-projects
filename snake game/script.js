@@ -123,5 +123,5 @@ function draw() {
   ctx.fillText(score, 2 * box, 1.6 * box);
 }
 
-let game = setInterval(draw, 100);
+let game = setInterval(draw, 150);
 
