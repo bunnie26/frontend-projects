@@ -1,12 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
 }
 body {
   background-color: #100e1d;
 }
+h1 {
+  display: inline-block;
+}
 .left {
+  position: fixed;
   height: 100vh;
   width: 25%;
   background-color: rgb(30, 33, 58);
@@ -14,5 +21,134 @@ body {
   top: 0;
   left: 0;
   overflow-x: hidden;
-
+}
+.right {
+  position: fixed;
+  height: 100vh;
+  width: 75%;
+  z-index: 1;
+  right: 0;
+  overflow-x: hidden;
+}
+.right .content {
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+#degree-select button {
+  background-color: rgb(88, 86, 118);
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 900;
+  margin: 0 5px;
+}
+#degree-select .btn.active {
+  background-color: rgb(231, 231, 235);
+  color: #100e1d;
+}
+#degree-select {
+  margin-block: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.Days {
+  display: flex;
+  /* justify-content: space-around; */
+  flex-direction: row;
+  padding-bottom: 20px;
+  position: relative;
+}
+.Days .day img {
+  width: 60px;
+  min-width: none;
+}
+.day {
+  background-color: rgb(30, 33, 58);
+  width: 130px;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  margin-inline: 30px;
+}
+.day h3 {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.day .temps {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-block: 20px;
+}
+.day .temps p {
+  font-size: 1.2rem;
+}
+.highlights {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.highlights .Main-head {
+  font-size: 1.2rem;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.highlights .features {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+.feature {
+  cursor: pointer;
+  display: inline-block;
+  width: 40%;
+  margin: 20px 42px;
+  /* padding: 20px; */
+  height: 100%;
+  background-color: rgb(30, 33, 58);
+  text-align: center;
+  /* align-items: center; */
+  /* align-self: center; */
+}
+.feature .container {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+}
+.feature .container div {
+  padding: 0 10px;
+}
+.feature .container span {
+  padding: 5px 0;
+}
+.feature .container .icon i {
+  background-color: rgb(97, 100, 117);
+  border-radius: 50%;
+  padding: 5px;
+}
+.feature .container input{
+  margin-bottom: 10px;
+}
+.feature p {
+  padding-block: 10px;
+}
+.features .second h1{
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+.footer{
+  padding-block: 10px;
+}
+.footer h4{
+  text-align: center;
+  color: rgb(160,159,177);
+}
+.footer h4 a{
+  color: rgb(160,159,177);
+  font-weight: 900
 }

@@ -5,18 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="left"></div>
     <div class="right">
-      <div class="Days">
-        <div class="day"></div>
-        <div class="day"></div>
-        <div class="day"></div>
-        <div class="day"></div>
-        <div class="day"></div>
+      <div class="content">
+        <div id="degree-select">
+          <button class="btn active">°C</button>
+          <button class="btn">°F</button>
+        </div>
+        <div class="Days">
+          <div class="day">
+            <h3>DAY</h3>
+            <img src="../weather-app-master/LightCloud.png" />
+            <div class="temps">
+              <p>16°</p>
+              <p>16°</p>
+            </div>
+          </div>
+          <div class="day">
+            <h3>DAY</h3>
+            <img src="../weather-app-master/LightCloud.png" />
+            <div class="temps">
+              <p>16°</p>
+              <p>16°</p>
+            </div>
+          </div>
+          <div class="day">
+            <h3>DAY</h3>
+            <img src="../weather-app-master/LightCloud.png" />
+            <div class="temps">
+              <p>16°</p>
+              <p>16°</p>
+            </div>
+          </div>
+          <div class="day">
+            <h3>DAY</h3>
+            <img src="../weather-app-master/LightCloud.png" />
+            <div class="temps">
+              <p>16°</p>
+              <p>16°</p>
+            </div>
+          </div>
+          <div class="day">
+            <h3>DAY</h3>
+            <img src="../weather-app-master/LightCloud.png" />
+            <div class="temps">
+              <p>16°</p>
+              <p>16°</p>
+            </div>
+          </div>
+        </div>
+        <div class="highlights">
+          <h1 class="Main-head">Today's Highlights</h1>
+          <div class="features">
+            <div class="feature">
+              <p>Wind Status</p>
+              <h1 class="head">7 mph</h1>
+              <div class="container">
+                <div class="icon"><i class="fas fa-location-arrow"></i></div>
+                <span>WSW</span>
+              </div>
+            </div>
+            <div class="feature">
+              <p>Humidity</p>
+              <h1 class="head">84%</h1>
+              <div class="container">
+                <input type="range" min="0" max="100" class="input-range" />
+              </div>
+            </div>
+            <div class="second">
+              <div class="feature">
+                <p>Visibility</p>
+                <h1 class="head">6,4 miles</h1>
+              </div>
+              <div class="feature">
+                <p>Air Pressure</p>
+                <h1 class="head">998 mb</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <h4>
+          created by <a href="https://github.com/bunnie26">bunnie26</a> - devChallenges.io
+        </h4>
       </div>
     </div>
+    <script src="gg.js"></script>
   </body>
 </html>
