@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Georama:wght@200&family=Montserrat:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Libre Baskerville", serif;
 }
 body {
   display: flex;
@@ -12,15 +12,48 @@ body {
   display: flex;
   /* justify-content: center; */
   align-items: center;
-  flex: 0.2;
+  flex: 0.18;
   flex-direction: column;
-  border: 5px solid aqua;
+  /* border: 5px solid aqua; */
   height: 100vh;
+  /* max-width: 300px; */
 }
 .right {
   /* display: flex; */
-  flex: 0.8;
+  flex: 0.82;
   flex-direction: column;
   border: 5px solid crimson;
   height: 100vh;
+}
+.left h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 500;
+  padding: 50px 30px;
+  font-family: "Abril Fatface", cursive;
+}
+.left .points {
+  font-family: "Abril Fatface", cursive;
+  font-family: "Georama", sans-serif;
+}
+.left ul {
+  list-style-type: none;
+}
+.left ul li {
+  font-family: "Montserrat", sans-serif;
+  color: grey;
+  padding: 20px 0;
+  margin-right: 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.left button {
+  margin: 20px 0;
+  background-color: rgb(255, 78, 78);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  padding: 15px 50px;
+  border-radius: 25px;
+  cursor: pointer;
 }
