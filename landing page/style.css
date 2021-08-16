@@ -7,6 +7,7 @@
 }
 body {
   display: flex;
+  background-color: rgb(250, 250, 250);
 }
 .left {
   display: flex;
@@ -19,10 +20,10 @@ body {
   /* max-width: 300px; */
 }
 .right {
-  /* display: flex; */
+  display: flex;
   flex: 0.82;
   flex-direction: column;
-  border: 5px solid crimson;
+  /* border: 5px solid crimson; */
   height: 100vh;
 }
 .left h1 {
@@ -41,11 +42,23 @@ body {
 }
 .left ul li {
   font-family: "Montserrat", sans-serif;
-  color: grey;
+
   padding: 20px 0;
   margin-right: 50px;
   font-size: 1.1rem;
   font-weight: 700;
+}
+.left ul li a {
+  text-decoration: none;
+  color: grey;
+  transition: all ease 0.2s;
+}
+.left ul li a:hover {
+  text-decoration: rgb(255, 78, 78) line-through;
+  /* color: rgb(255, 78, 78); */
+}
+.left .active {
+  text-decoration: rgb(255, 78, 78) line-through;
 }
 .left button {
   margin: 20px 0;
@@ -56,4 +69,140 @@ body {
   padding: 15px 50px;
   border-radius: 25px;
   cursor: pointer;
+}
+.right hr {
+  color: rgb(253, 78, 78);
+  width: 80px;
+  height: 3px;
+  border-width: 0;
+  color: rgb(253, 78, 78);
+  background-color: rgb(253, 78, 78); /* font-size: 2rem; */
+  margin: 20px 0;
+}
+.right .up {
+  display: flex;
+  margin-top: 100px;
+}
+.right h1 {
+  padding-top: 10px;
+  flex: 0.6;
+  font-size: 4.8rem;
+  padding-left: 80px;
+  padding-right: 30px;
+  /* text-align: center; */
+}
+.right .r2 {
+  font-family: "Montserrat", sans-serif;
+  color: grey;
+  font-weight: 600;
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 50px; */
+  font-size: 1rem;
+  margin: 30px 0;
+  padding-left: 80px;
+  padding-right: 0px;
+  line-height: 1.7;
+}
+.right p {
+  display: inline-block;
+}
+.right .down {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 100px;
+  font-family: "Montserrat", sans-serif;
+}
+.right .down .card {
+  height: 200px;
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid black; */
+  border-radius: 22px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1),
+    10px 10px 20px 10px rgba(0, 0, 0, 0.1);
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+.right .card:hover {
+  transform: scale(1.1);
+}
+.right .down .card img {
+  width: 100%;
+}
+.right .img1 {
+  background-image: url("https://imgk.timesnownews.com/story/chad-montano-lP5MCM6nZ5A-unsplash.jpg?tr=w-300,h-400,fo-auto");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  width: 70%;
+  height: 55%;
+  /* text-align: center; */
+  margin: 20px 0;
+}
+.right .img2 {
+  background-image: url("https://im.whatshot.in/img/2018/Nov/shutterstock-268648991-1-1542106287.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  width: 70%;
+  height: 55%;
+  /* text-align: center; */
+  margin: 20px 0;
+}
+.right .img3 {
+  background-image: url("https://dashsikkim.com/wp-content/uploads/2021/04/BBQ-Burger-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  width: 70%;
+  height: 55%;
+  /* text-align: center; */
+  margin: 20px 0;
+}
+.right .img4 {
+  background-image: url("https://img-global.cpcdn.com/recipes/5ef1be27ab70dd1b/751x532cq70/loaded-nachos-recipe-main-photo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  width: 70%;
+  height: 55%;
+  /* text-align: center; */
+  margin: 20px 0;
+}
+.right .img5 {
+  background-image: url("https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/hakka-noodles-recipe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  width: 70%;
+  height: 55%;
+  /* text-align: center; */
+  margin: 20px 0;
+}
+.right .down h2 {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+/* =----------------------------------------------------------- */
+
+@media screen and (max-width: 1220px) {
+  /* body {
+    /* background-color: aqua; */
+  
+  .right .down {
+    display: grid;
+  }
+  .right .card {
+    margin: 10px;
+  }
 }
