@@ -16,4 +16,3 @@ function addCart() {
 }
 var cart = document.getElementById("gg");
 var nav_div = document.getElementById("cart");
-// nav_div.addEventListener("click", addCart);
