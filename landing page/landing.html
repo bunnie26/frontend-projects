@@ -6,14 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
+    <div class="nav">
+      <div class="main-nav">
+        <div class="hamburger" onclick="addCart()">
+          <hr class="one" />
+          <hr class="two" />
+          <hr class="three" />
+        </div>
+        <h1>Lorem</h1>
+        <div class="icon">
+          <i class="fa fa-shopping-cart"></i>
+        </div>
+      </div>
+    </div>
     <div class="left">
       <h1>Lorem Ipsum</h1>
       <div class="points">
         <ul>
-          <li><a href="#" class="btn active" >About</a></li>
+          <li><a href="#" class="btn active">About</a></li>
           <li><a href="#" class="btn">Services</a></li>
           <li><a href="#" class="btn">Cusine</a></li>
           <li><a href="#" class="btn">Gallery</a></li>
@@ -21,7 +37,7 @@
           <li><a href="#" class="btn">Book</a></li>
         </ul>
       </div>
-      <button>Cart</button>
+      <button id="gg">Cart</button>
     </div>
     <div class="right">
       <div class="up">
@@ -55,6 +71,18 @@
           <div class="img5"></div>
           <h2>Hakka Noodles</h2>
         </div>
+      </div>
+    </div>
+    <div class="cart-container not-visible" id="cart">
+      <div class="points nav-points">
+        <ul>
+          <li><a href="#" class="btn active">About</a></li>
+          <li><a href="#" class="btn">Services</a></li>
+          <li><a href="#" class="btn">Cusine</a></li>
+          <li><a href="#" class="btn">Gallery</a></li>
+          <li><a href="#" class="btn">Contact</a></li>
+          <li><a href="#" class="btn">Book</a></li>
+        </ul>
       </div>
     </div>
     <script src="index.js"></script>
